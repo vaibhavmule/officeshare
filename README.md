@@ -1,4 +1,4 @@
 OfficeShare
 ===========
 
-Co-Working Space Discovery Platform and Shares Office.  
+Co-Working Space Discovery Platform and Share Offices.  

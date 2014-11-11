@@ -6,7 +6,7 @@ class Officeform(forms.ModelForm):
     description = forms.CharField(max_length=1000, widget=forms.Textarea(attrs={'size':'40'}))
     class Meta:
         model = office
-        fields = ('location','rent', 'description', 'picture')
+        fields = ('location','rent', 'people', 'description', 'picture')
 
 
 

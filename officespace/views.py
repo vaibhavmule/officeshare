@@ -8,12 +8,14 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from officespace.forms import Officeform
+from officespace.models import office
 from datetime import datetime
 
 def index(request):
     context = RequestContext(request)
     context_dict = {}
-
+    offices = office.objects.all()
+    context_dict['offices'] = offices
     return render_to_response('officespace/index.html', context_dict, context)
 
 def addspace(request):

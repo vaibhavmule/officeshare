@@ -35,16 +35,16 @@
                 <ul class="nav navbar-nav">
                     {% if user.is_authenticated %}
                         <li><a href="#">profile</a></li>
-                        <li><a href="/officespace/add">Add spaces</a></li>
+                        <li><a href="/addspaces/">Add spaces</a></li>
                     {% endif %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
                         <li><a>{{user.username|upper}}</a></li>
-                        <li><a href="/logout/">logout</a></li>
+                        <li><a href="/user/logout/">logout</a></li>
                     {% else %}
-                        <li><a href="/register/">Register</a></li>
-                        <li><a href="/login/">login</a></li>
+                        <li><a href="/user/register/">Register</a></li>
+                        <li><a href="/user/login/">login</a></li>
                     {% endif %}
                 </ul>
             </div>

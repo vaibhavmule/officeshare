@@ -4,5 +4,6 @@ from officespace import views
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
         url(r'^user/', include('oautherise.urls')),
-        url(r'addspaces/$', views.addspace, name="space"),
+        url(r'addspaces/$', views.addspace, name="addspace"),
+        url(r'info/(?P<location>\w+)/$', views.officespaceinfo, name='officespaceinfo'),
         )

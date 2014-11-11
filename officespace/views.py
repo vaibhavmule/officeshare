@@ -48,3 +48,11 @@ def addspace(request):
     return render_to_response('officespace/addofficeform.html', context_dict, context)
 
 
+def officespaceinfo(request, location):
+    context = RequestContext(request)
+    context_dict = {}
+
+    off = office.objects.get(location=location)
+    context_dict['offices'] = off
+
+    return render_to_response('officespace/info.html', context_dict, context)

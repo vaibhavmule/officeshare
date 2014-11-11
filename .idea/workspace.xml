@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/officespace/models.py" line="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37c998ea-154a-41b2-a240-d7d8974be799" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/officespace/info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.db" afterPath="$PROJECT_DIR$/database.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officespace/forms.py" afterPath="$PROJECT_DIR$/officespace/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/officespace/index.html" afterPath="$PROJECT_DIR$/templates/officespace/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officespace/models.py" afterPath="$PROJECT_DIR$/officespace/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officespace/urls.py" afterPath="$PROJECT_DIR$/officespace/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officespace/views.py" afterPath="$PROJECT_DIR$/officespace/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,8 +38,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officespace/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1008">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1152">
+              <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
               <folding>
                 <element signature="e#26#62#0" expanded="true" />
               </folding>
@@ -39,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/officespace/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49008498" vertical-offset="925" max-vertical-offset="1350">
-              <caret line="61" column="78" selection-start-line="61" selection-start-column="78" selection-end-line="61" selection-end-column="78" />
+            <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="360">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -72,30 +80,18 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officespace/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oautherise/urls.py">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/officespace/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/officeshare/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="3330">
-              <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -104,8 +100,8 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officespace/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -113,11 +109,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="info.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/officespace/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45892352" vertical-offset="0" max-vertical-offset="353">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/officespace/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.740741" vertical-offset="61" max-vertical-offset="486">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="486">
+              <caret line="2" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -149,18 +155,19 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/officespace/admin.py" />
         <option value="$PROJECT_DIR$/oautherise/views.py" />
-        <option value="$PROJECT_DIR$/officespace/forms.py" />
-        <option value="$PROJECT_DIR$/officespace/models.py" />
         <option value="$PROJECT_DIR$/officeshare/urls.py" />
         <option value="$PROJECT_DIR$/officeshare/settings.py" />
         <option value="$PROJECT_DIR$/templates/officespace/login.html" />
         <option value="$PROJECT_DIR$/templates/officespace/register.html" />
         <option value="$PROJECT_DIR$/templates/officespace/base.html" />
         <option value="$PROJECT_DIR$/oautherise/urls.py" />
-        <option value="$PROJECT_DIR$/officespace/urls.py" />
         <option value="$PROJECT_DIR$/templates/officespace/addofficeform.html" />
-        <option value="$PROJECT_DIR$/officespace/views.py" />
         <option value="$PROJECT_DIR$/templates/officespace/index.html" />
+        <option value="$PROJECT_DIR$/officespace/urls.py" />
+        <option value="$PROJECT_DIR$/officespace/views.py" />
+        <option value="$PROJECT_DIR$/officespace/forms.py" />
+        <option value="$PROJECT_DIR$/officespace/models.py" />
+        <option value="$PROJECT_DIR$/templates/officespace/info.html" />
       </list>
     </option>
   </component>
@@ -565,7 +572,7 @@
           <url>file://$PROJECT_DIR$/oautherise/urls.py</url>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -621,22 +628,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officespace/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/officeshare/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="468">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,10 +656,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oautherise/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/officespace/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.740741" vertical-offset="61" max-vertical-offset="486">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="486">
+          <caret line="2" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -675,12 +682,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oautherise/urls.py">
+    <entry file="file://$PROJECT_DIR$/officespace/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -693,13 +700,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officespace/urls.py">
+    <entry file="file://$PROJECT_DIR$/officespace/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1152">
+          <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#26#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officespace/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,28 +726,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officespace/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/officespace/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="360">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officespace/views.py">
+    <entry file="file://$PROJECT_DIR$/officespace/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1008">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#26#62#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/officespace/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/officespace/info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49008498" vertical-offset="925" max-vertical-offset="1350">
-          <caret line="61" column="78" selection-start-line="61" selection-start-column="78" selection-end-line="61" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.45892352" vertical-offset="0" max-vertical-offset="353">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>

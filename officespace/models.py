@@ -6,6 +6,7 @@ class office(models.Model):
     user = models.ForeignKey(User)
     location = models.CharField(max_length=150)
     rent = models.IntegerField()
+    description = models.TextField(max_length=1000)
     date = models.DateField(auto_now=True)
     picture = models.ImageField(upload_to='office_images', blank=True)
 

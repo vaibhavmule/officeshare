@@ -1,0 +1,15 @@
+{% extends 'officespace/base.html' %}
+{% load static %}
+{% block body_block %}
+    <div>
+        {{ usr.username }}
+        {{ usr.id }}
+        <b>{{ messages }}</b>
+        {% for mess in messages %}
+            <p>{{ mess.id }}</p>
+            <p>{{ mess.message }}</p>
+            <p>{{ mess.receiverid }}</p>
+            <p>{{ mess.senderid }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -15,7 +15,7 @@ class office(models.Model):
         return self.location
 
 class messages(models.Model):
-    message = models.TextField()
+    message = models.TextField(max_length=100)
     receiverid = models.IntegerField()
     senderid = models.IntegerField()
     seen = models.IntegerField()

@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from officespace.forms import Officeform, messageform
-from officespace.models import office
+from officespace.models import office, messages
 from datetime import datetime
 
 def index(request):
@@ -58,16 +58,16 @@ def addspace(request):
     return render_to_response('officespace/addofficeform.html', context_dict, context)
 
 
-def officespaceinfo(request, location):
+def officespaceinfo(request, id):
     context = RequestContext(request)
     context_dict = {}
 
-    off = office.objects.get(location=location)
+    off = office.objects.get(id=id)
     context_dict['offices'] = off
 
     return render_to_response('officespace/info.html', context_dict, context)
 
-def messages(request, receiverid):
+def messag(request, receiverid):
     context = RequestContext(request)
     context_dict = {}
     user = User.objects.get(id=receiverid)
@@ -92,6 +92,18 @@ def messages(request, receiverid):
 
     context_dict['form'] = form
     return render_to_response('officespace/message.html', context_dict, context)
+
+
+def showmessages(request):
+    context = RequestContext(request)
+    context_dict = {}
+    usr = User.objects.get(username=request.user)
+    context_dict['usr'] = usr
+    message = messages.objects.all()
+    context_dict['messages'] = message
+
+    return render_to_response('officespace/showmessages.html', context_dict, context)
+
 
 
 

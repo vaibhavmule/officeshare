@@ -1,5 +1,5 @@
 from django import forms
-from officespace.models import office
+from officespace.models import office, messages
 from django.contrib.auth.models import User
 
 class Officeform(forms.ModelForm):
@@ -8,7 +8,7 @@ class Officeform(forms.ModelForm):
         model = office
         fields = ('location','rent', 'people', 'description', 'picture')
 
-
-
-
-
+class messageform(forms.ModelForm):
+    class Meta:
+        model = messages
+        fields = ('message',)

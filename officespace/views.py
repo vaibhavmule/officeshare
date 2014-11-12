@@ -7,7 +7,7 @@ from oautherise.forms import Userform
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from officespace.forms import Officeform
+from officespace.forms import Officeform, messageform
 from officespace.models import office
 from datetime import datetime
 
@@ -15,7 +15,7 @@ def index(request):
     context = RequestContext(request)
     context_dict = {}
     if request.method == 'GET':
-        offices = office.objects.all()
+        offices = office.objects.order_by('date')
         context_dict['offices'] = offices
     elif request.method == 'POST':
         location = request.POST.get('location')
@@ -66,5 +66,32 @@ def officespaceinfo(request, location):
     context_dict['offices'] = off
 
     return render_to_response('officespace/info.html', context_dict, context)
+
+def messages(request, receiverid):
+    context = RequestContext(request)
+    context_dict = {}
+    user = User.objects.get(id=receiverid)
+    context_dict['user'] = user
+
+    if request.method == 'GET':
+        form = messageform()
+
+    elif request.method == 'POST':
+        form = messageform(request.POST)
+
+        if form.is_valid():
+            mess = form.save(commit=False)
+            mess.receiverid = int(receiverid)
+            user = User.objects.get(username=request.user)
+            mess.senderid = int(user.id)
+            mess.seen = 1
+            mess.save()
+            return HttpResponseRedirect("/")
+        else:
+            print form.errors
+
+    context_dict['form'] = form
+    return render_to_response('officespace/message.html', context_dict, context)
+
 
 

@@ -1,0 +1,22 @@
+{% extends 'officespace/base.html' %}
+{% load static %}
+{% block body_block %}
+    <div class="hero-unit">
+        <h2>Message</h2>
+        <p>To {{ user.username|upper }} </p>
+        <div class="container">
+        <form class="form-horizontal" id="login_form" method="post" action="/message/{{ user.id }}/">
+            {% csrf_token %}
+            <div class="col-xs-6">
+            {% for field in form.visible_fields %}
+                    {{ field.label_tag }}
+                    {{ field }}
+            <div class="help-block">{{ field.errors }}</div></br>
+            {% endfor %}
+            </div>
+            <div class="col-xs-offset-2 col-xs-10">
+                <input class="btn btn-primary" type="submit" name="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+{% endblock %}

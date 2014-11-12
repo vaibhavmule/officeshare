@@ -13,3 +13,12 @@ class office(models.Model):
 
     def __unicode__(self):
         return self.location
+
+class messages(models.Model):
+    message = models.TextField()
+    receiverid = models.IntegerField()
+    senderid = models.IntegerField()
+    seen = models.IntegerField()
+
+    def __unicode__(self):
+        return self.message

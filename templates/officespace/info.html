@@ -3,10 +3,12 @@
 {% block body_block %}
     <img src="{{ MEDIA_URL }}/{{offices.picture}}" width="350" height="350">
     <div>
+    <p>userid : {{ offices.id }} </p>
+    <p>user: {{ offices.user }}</p>
     <p>Location : {{ offices.location }}</p>
     <p>Date posted : {{ offices.date }}</p>
     <p>Rent : {{ offices.rent }}</p>
     <p>Description : {{ offices.description }}</p>
-    <a href="/contact/">contact</a>
     </div>
+    <a href="/message/{{ offices.id }}">contact/message</a>
 {% endblock %}

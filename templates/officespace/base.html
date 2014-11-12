@@ -40,7 +40,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a>{{user.username|upper}}</a></li>
+                        <li><a>welcome,{{user.username|upper}}</a></li>
+                        <li><a href="/messages/view/">messages</a></li>
                         <li><a href="/user/logout/">logout</a></li>
                     {% else %}
                         <li><a href="/user/register/">Register</a></li>

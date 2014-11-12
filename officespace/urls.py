@@ -5,5 +5,7 @@ urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
         url(r'^user/', include('oautherise.urls')),
         url(r'addspaces/$', views.addspace, name="addspace"),
-        url(r'info/(?P<location>\w+)/$', views.officespaceinfo, name='officespaceinfo'),
+        url(r'info/(?P<id>\w+)/$', views.officespaceinfo, name='officespaceinfo'),
+        url(r'message/(?P<receiverid>\w+)/$', views.messag, name='messages'),
+        url(r'messages/view/$', views.showmessages, name='showmessages'),
         )

@@ -142,9 +142,6 @@ INSTALLED_APPS = (
 )
 
 ########celery setings#######33
-import djcelery
-djcelery.setup_loader()
-BROKER_URL = "django://"
 
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

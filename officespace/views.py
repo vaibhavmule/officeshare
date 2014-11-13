@@ -102,7 +102,7 @@ def showmessages(request):
     for use in user:
         keymapper[use.id] = use.username
 
-    context_dict['keymapper'] = keymapper
+    context_dict['keymapper '] = keymapper
     usr = User.objects.get(username=request.user)
     message = messages.objects.filter(receiverid=int(usr.id))
     context_dict['messages'] = message

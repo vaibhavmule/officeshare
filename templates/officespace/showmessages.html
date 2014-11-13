@@ -6,16 +6,15 @@
 {#            {{ke}}#}
 {#        {% endfor %}#}
         {% for mess in messages %}
-            <p>{{ forloop.counter }}</p>
-            <p>{{ mess.message }}</p>
-            <p>sender :{{ mess.receiverid }}
+            <p><b> s.no : </b>{{ forloop.counter }}</p>
+            <p><b>Message :</b>{{ mess.message }}</p>
+            <p><b>sender :</b>
             {% for k, v in keymapper.items %}
-                {% ifequal k mess.receiverid %}
+                {% ifequal k mess.senderid %}
                     {{ v }}
                 {% endifequal %}
             {% endfor %}
             </p>
-            <p>{{ mess.senderid }}</p>
         {% endfor %}
     </div>
 {% endblock %}

@@ -97,9 +97,14 @@ def messag(request, receiverid):
 def showmessages(request):
     context = RequestContext(request)
     context_dict = {}
+    user = User.objects.all()
+    keymapper = {}
+    for use in user:
+        keymapper[use.id] = use.username
+
+    context_dict['keymapper '] = keymapper
     usr = User.objects.get(username=request.user)
-    context_dict['usr'] = usr
-    message = messages.objects.all()
+    message = messages.objects.filter(receiverid=int(usr.id))
     context_dict['messages'] = message
 
     return render_to_response('officespace/showmessages.html', context_dict, context)

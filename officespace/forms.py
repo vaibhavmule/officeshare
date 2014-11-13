@@ -10,4 +10,5 @@ class Officeform(forms.ModelForm):
 
 class messageform(forms.ModelForm):
     class Meta:
+        model = messages
         fields = ('message',)

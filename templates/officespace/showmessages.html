@@ -2,13 +2,19 @@
 {% load static %}
 {% block body_block %}
     <div>
-        {{ usr.username }}
-        {{ usr.id }}
-        <b>{{ messages }}</b>
+{#        {% for ke in key.items() %}#}
+{#            {{ke}}#}
+{#        {% endfor %}#}
         {% for mess in messages %}
-            <p>{{ mess.id }}</p>
+            <p>{{ forloop.counter }}</p>
             <p>{{ mess.message }}</p>
-            <p>{{ mess.receiverid }}</p>
+            <p>sender :{{ mess.receiverid }}
+            {% for k, v in keymapper.items %}
+                {% ifequal k mess.receiverid %}
+                    {{ v }}
+                {% endifequal %}
+            {% endfor %}
+            </p>
             <p>{{ mess.senderid }}</p>
         {% endfor %}
     </div>

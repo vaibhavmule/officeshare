@@ -3,7 +3,7 @@
 {% block body_block %}
     <div class="hero-unit">
         <h2>Message</h2>
-        <p>To {{ user.username|upper }} </p>
+        <p>To: {{ users.username|upper }} </p>
         <div class="container">
         <form class="form-horizontal" id="login_form" method="post" action="/message/{{ user.id }}/">
             {% csrf_token %}

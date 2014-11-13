@@ -70,8 +70,8 @@ def officespaceinfo(request, id):
 def messag(request, receiverid):
     context = RequestContext(request)
     context_dict = {}
-    user = User.objects.get(id=receiverid)
-    context_dict['user'] = user
+    users = User.objects.get(id=receiverid)
+    context_dict['users'] = users
 
     if request.method == 'GET':
         form = messageform()
@@ -82,8 +82,8 @@ def messag(request, receiverid):
         if form.is_valid():
             mess = form.save(commit=False)
             mess.receiverid = int(receiverid)
-            user = User.objects.get(username=request.user)
-            mess.senderid = int(user.id)
+            users = User.objects.get(username=request.user)
+            mess.senderid = int(users.id)
             mess.seen = 1
             mess.save()
             return HttpResponseRedirect("/")
@@ -102,7 +102,7 @@ def showmessages(request):
     for use in user:
         keymapper[use.id] = use.username
 
-    context_dict['keymapper '] = keymapper
+    context_dict['keymapper'] = keymapper
     usr = User.objects.get(username=request.user)
     message = messages.objects.filter(receiverid=int(usr.id))
     context_dict['messages'] = message

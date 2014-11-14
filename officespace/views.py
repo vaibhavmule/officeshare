@@ -14,6 +14,7 @@ from datetime import datetime
 def index(request):
     context = RequestContext(request)
     context_dict = {}
+
     if request.method == 'GET':
         offices = office.objects.order_by('date')
         context_dict['offices'] = offices
@@ -25,6 +26,15 @@ def index(request):
                 context_dict['offices'] = offices
             except:
                 pass
+        elif 'del' in request.POST:
+            officeid = request.POST.get('title')
+            office.objects.filter(id=officeid).delete()
+            return HttpResponseRedirect('/')
+    try:
+        use = User.objects.get(username=request.user)
+        context_dict['used'] = use
+    except:
+        pass
     return render_to_response('officespace/index.html', context_dict, context)
 
 def addspace(request):

@@ -18,14 +18,13 @@ def index(request):
         offices = office.objects.order_by('date')
         context_dict['offices'] = offices
     elif request.method == 'POST':
-        location = request.POST.get('location')
-        budget = request.POST.get('budget')
-        noofpeople = request.POST.get('noofpeople')
-        try:
-            offices = office.objects.filter(location=location,budget_lte=budget, people_lte=noofpeople)
-            context_dict['offices'] = offices
-        except:
-            pass
+        if 'location' in request.POST:
+            location = request.POST.get('location')
+            try:
+                offices = office.objects.filter(location=location)
+                context_dict['offices'] = offices
+            except:
+                pass
     return render_to_response('officespace/index.html', context_dict, context)
 
 def addspace(request):

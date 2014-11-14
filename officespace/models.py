@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class office(models.Model):
-    user = models.ForeignKey(User)
+    users = models.ForeignKey(User)
     location = models.CharField(max_length=150)
     rent = models.IntegerField()
     people = models.IntegerField()

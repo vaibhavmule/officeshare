@@ -5,7 +5,7 @@
         <h2>Message</h2>
         <p>To: {{ users.username|upper }} </p>
         <div class="container">
-        <form class="form-horizontal" id="login_form" method="post" action="/message/{{ user.id }}/">
+        <form class="form-horizontal" id="login_form" method="post" action="/message/{{ users.id }}/">
             {% csrf_token %}
             <div class="col-xs-6">
             {% for field in form.visible_fields %}

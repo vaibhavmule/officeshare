@@ -2,8 +2,8 @@
 {% load static %}
 {% block body_block %}
     <div>
-{#        {% for ke in key.items() %}#}
-{#            {{ke}}#}
+{#        {% for k,v in keymapper.items %}#}
+{#            {{k}} : {{ v }}#}
 {#        {% endfor %}#}
         {% for mess in messages %}
             <p><b> s.no : </b>{{ forloop.counter }}</p>
@@ -13,8 +13,9 @@
                 {% ifequal k mess.senderid %}
                     {{ v }}
                 {% endifequal %}
+
             {% endfor %}
-            </p>
+            <hr>
         {% endfor %}
     </div>
 {% endblock %}

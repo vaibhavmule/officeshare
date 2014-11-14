@@ -38,8 +38,8 @@ def addspace(request):
             office = form.save(commit=False)
 
             try:
-                user = User.objects.get(username=request.user)
-                office.user = user
+                users = User.objects.get(username=request.user)
+                office.users = users
 
                 if 'picture' in request.FILES:
                     office.picture = request.FILES['picture']
@@ -61,7 +61,6 @@ def addspace(request):
 def officespaceinfo(request, id):
     context = RequestContext(request)
     context_dict = {}
-
     off = office.objects.get(id=id)
     context_dict['offices'] = off
 
@@ -70,6 +69,8 @@ def officespaceinfo(request, id):
 def messag(request, receiverid):
     context = RequestContext(request)
     context_dict = {}
+    # userfor = User.objects.get(username=receiverid)
+    # receiverid=int(userfor.id)
     users = User.objects.get(id=receiverid)
     context_dict['users'] = users
 
@@ -97,9 +98,9 @@ def messag(request, receiverid):
 def showmessages(request):
     context = RequestContext(request)
     context_dict = {}
-    user = User.objects.all()
+    users = User.objects.all()
     keymapper = {}
-    for use in user:
+    for use in users:
         keymapper[use.id] = use.username
 
     context_dict['keymapper'] = keymapper

@@ -8,4 +8,5 @@ urlpatterns = patterns('',
         url(r'info/(?P<id>\w+)/$', views.officespaceinfo, name='officespaceinfo'),
         url(r'message/(?P<receiverid>\w+)/$', views.messag, name='messages'),
         url(r'messages/view/$', views.showmessages, name='showmessages'),
+        url(r'userprofile/(?P<userprofilename>\w+)/$', views.userprofilename, name='userprofilename'),
         )

@@ -1,0 +1,16 @@
+{% extends 'officespace/base.html' %}
+{% block body_block %}
+    <h2 class="">Office spaces added</h2>
+    {% for off in offices %}
+        <div class="col-md-3">
+            <a href="/info/{{off.id}}"><img src="{{ MEDIA_URL }}/{{off.picture}}" width="150" height="150">
+            <p><b>location: </b>{{off.location}}</p>
+            <p><b>Rent: <b>{{off.rent}}</p></a>
+            <form method="post" action="/">
+                {% csrf_token %}
+                <input type="hidden" name="title" value="{{off.id}}">
+                <input class="btn btn-danger" type="submit" name="del" value="del">
+            </form>
+        </div>
+    {% endfor %}
+{% endblock %}

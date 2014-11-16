@@ -120,5 +120,16 @@ def showmessages(request):
     return render_to_response('officespace/showmessages.html', context_dict, context)
 
 
+def userprofilename(request, userprofilename):
+    context = RequestContext(request)
+    context_dict = {}
+    if request.method == 'GET':
+        userprof = User.objects.get(username=request.user)
+        offices = office.objects.filter(users=userprof)
+        context_dict['offices'] = offices
+    elif request.method == 'POST':
+        officeid = request.POST.get('title')
+        office.objects.filter(id=officeid).delete()
+        return HttpResponseRedirect('/')
 
-
+    return render_to_response('officespace/userprofilename.html', context_dict, context)

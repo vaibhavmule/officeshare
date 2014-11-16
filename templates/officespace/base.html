@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">{% block content %}Officespace{% endblock %}</a>
+                <a href="/" class="navbar-brand">{% block content %}Officeshare{% endblock %}</a>
             </div>
 
             <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -39,7 +39,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a>welcome,{{user.username|upper}}</a></li>
+                        <li><a href="userprofile/{{ user.username }}"> {{user.username|upper}}</a></li>
                         <li><a href="/messages/view/">messages</a></li>
                         <li><a href="/user/logout/">logout</a></li>
                     {% else %}
